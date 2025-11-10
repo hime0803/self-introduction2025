@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const img = document.createElement("img");
 		img.className = "c-quiz__judge-mark";
 		img.alt = isCorrect ? "正解" : "不正解";
-		img.src = isCorrect ? "/_common/img/quiz_correct.svg" : "/_common/img/quiz_wrong.svg";
+		img.src = isCorrect ? "_common/img/quiz_correct.svg" : "_common/img/quiz_wrong.svg";
 
 		const textSpan = document.createElement("span");
 		textSpan.className = "c-quiz__judge-text";

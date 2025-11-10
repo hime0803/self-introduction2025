@@ -10,8 +10,8 @@ const favoriteData = [
         もちろん大阪の家に持ってきました。<br />
         小旅行に連れて行ったり、作業を見守ったりしてくれています。相棒です。
     `,
-		mainImg: "/_common/img/favorite/favorite_nuigurumi_img01.jpg",
-		imgList: ["/_common/img/favorite/favorite_nuigrumi_img-list01.jpg", "/_common/img/favorite/favorite_nuigrumi_img-list02.jpg", "/_common/img/favorite/favorite_nuigrumi_img-list03.jpg", "/_common/img/favorite/favorite_nuigrumi_img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite_nuigurumi_img01.jpg",
+		imgList: ["_common/img/favorite/favorite_nuigrumi_img-list01.jpg", "_common/img/favorite/favorite_nuigrumi_img-list02.jpg", "_common/img/favorite/favorite_nuigrumi_img-list03.jpg", "_common/img/favorite/favorite_nuigrumi_img-list04.jpg"],
 	},
 	{
 		label: "味",
@@ -23,8 +23,8 @@ const favoriteData = [
         ストレス発散や汗をかいてスッキリしたい時など、辛いものがこころに染みる感じがしてついつい食べ過ぎてしまいます。<br />
         食べ過ぎには注意しないと翌日に響きやすいので、食べる時はほどほどに…と自分に言い聞かせながら食べています。
     `,
-		mainImg: "/_common/img/favorite/favorite-taste-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-taste-img-list01.jpg", "/_common/img/favorite/favorite-taste-img-list02.jpg", "/_common/img/favorite/favorite-taste-img-list03.jpg", "/_common/img/favorite/favorite-taste-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-taste-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-taste-img-list01.jpg", "_common/img/favorite/favorite-taste-img-list02.jpg", "_common/img/favorite/favorite-taste-img-list03.jpg", "_common/img/favorite/favorite-taste-img-list04.jpg"],
 	},
 	{
 		label: "Duolingo",
@@ -38,8 +38,8 @@ const favoriteData = [
         （現在：2025/08/25 400日連続記録更新中！）<br /><br />
         公式サイト：<a class="c-link" href="https://ja.duolingo.com/">https://ja.duolingo.com/</a>
     `,
-		mainImg: "/_common/img/favorite/favorite_duolingo_img01.jpg",
-		imgList: ["/_common/img/favorite/favorite_duolingo_img-list01.jpg", "/_common/img/favorite/favorite_duolingo_img-list02.jpg"],
+		mainImg: "_common/img/favorite/favorite_duolingo_img01.jpg",
+		imgList: ["_common/img/favorite/favorite_duolingo_img-list01.jpg", "_common/img/favorite/favorite_duolingo_img-list02.jpg"],
 	},
 	{
 		label: "IoT家電",
@@ -54,7 +54,7 @@ const favoriteData = [
         入門編としてはSwitchBotハブを買って、赤外線コントロールできるリモコン家電を全部声やスマホで操作できるようにするのがおすすめです！オートメーション機能を使って自動化したりできるのですごく便利です！<br /><br />
         ほかにも何か生活を豊かにできる便利グッズがあればぜひ教えてください！
     `,
-		mainImg: "/_common/img/favorite/favorite-switchbot-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-switchbot-img01.jpg",
 		imgList: [],
 	},
 	{
@@ -69,8 +69,8 @@ const favoriteData = [
         努力をしているけど、周りには見せない…そんな自己顕示欲、承認欲求的なものがあまり見受けられず、本能のままに生きているところがうさぎの良さだと思っています！！<br /><br />
         （↑イラストはお友達に描いてもらいました！）
     `,
-		mainImg: "/_common/img/favorite/favorite-character-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-character-img-list01.jpg", "/_common/img/favorite/favorite-character-img-list02.jpg", "/_common/img/favorite/favorite-character-img-list03.jpg", "/_common/img/favorite/favorite-character-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-character-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-character-img-list01.jpg", "_common/img/favorite/favorite-character-img-list02.jpg", "_common/img/favorite/favorite-character-img-list03.jpg", "_common/img/favorite/favorite-character-img-list04.jpg"],
 	},
 	{
 		label: "ゲーム",
@@ -86,7 +86,7 @@ const favoriteData = [
         大変喜ばしいです！（2025/08/25現在）<br /><br />
         マリカワも楽しそうだし、バナンザも楽しそうだし、エアライドも楽しそうで時間が足りなさそうで困っちゃいます。まずはさらに画質が良くなったティアキンをプレイしてゆっくり様子見をしていこうと思っています！
     `,
-		mainImg: "/_common/img/favorite/favorite-game-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-game-img01.jpg",
 		imgList: [],
 	},
 	{
@@ -108,7 +108,7 @@ const favoriteData = [
 		最近では、悪役令嬢ものを片っ端から観て行ったり、鬼滅の映画が上映中なので、鬼滅を立志編からイッキ見しました〜！めちゃテンポ良くて面白いです！<br /><br />
 		なにかオススメのアニメあったら観てみたいので、ぜひ教えてくださいね！
     `,
-		mainImg: "/_common/img/favorite/favorite-anime-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-anime-img01.jpg",
 		imgList: [],
 	},
 	{
@@ -122,8 +122,8 @@ const favoriteData = [
 		アクセサリーや小物など、ついついお花モチーフのものを買ってしまったりします！<br /><br />
 		もし私にプレゼントとかくれる人がいたら、とりあえずお花のものを買っておけば間違いないです！<br /><br />
 		一番好きなお花はデイジーです！    `,
-		mainImg: "/_common/img/favorite/favorite-flower-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-flower-img-list01.jpg", "/_common/img/favorite/favorite-flower-img-list02.jpg", "/_common/img/favorite/favorite-flower-img-list03.jpg", "/_common/img/favorite/favorite-flower-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-flower-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-flower-img-list01.jpg", "_common/img/favorite/favorite-flower-img-list02.jpg", "_common/img/favorite/favorite-flower-img-list03.jpg", "_common/img/favorite/favorite-flower-img-list04.jpg"],
 	},
 	{
 		label: "色",
@@ -140,8 +140,8 @@ const favoriteData = [
 		いつか蛍光イエローグリーンやってみたいな〜と思いながら若いうちにやっておけばよかった...と後悔することになるんだと思っています。<br /><br />
 		インナーだけとかだったらいけるかなぁと思ったりしていますが、教員の間は我慢です...。
     `,
-		mainImg: "/_common/img/favorite/favorite-color-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-color-img-list01.jpg", "/_common/img/favorite/favorite-color-img-list02.jpg", "/_common/img/favorite/favorite-color-img-list03.jpg", "/_common/img/favorite/favorite-color-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-color-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-color-img-list01.jpg", "_common/img/favorite/favorite-color-img-list02.jpg", "_common/img/favorite/favorite-color-img-list03.jpg", "_common/img/favorite/favorite-color-img-list04.jpg"],
 	},
 	{
 		label: "服",
@@ -162,8 +162,8 @@ const favoriteData = [
 		骨格とかパーソナルカラーとか診断していないので、いつか診断して、本当に自分に似合う服を見つけ出したいと思います。<br /><br />
 		（自認ではイエベ春/骨格ストレートです）
 		`,
-		mainImg: "/_common/img/favorite/favorite-clothes-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-clothes-img-list01.jpg", "/_common/img/favorite/favorite-clothes-img-list02.jpg", "/_common/img/favorite/favorite-clothes-img-list03.jpg"],
+		mainImg: "_common/img/favorite/favorite-clothes-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-clothes-img-list01.jpg", "_common/img/favorite/favorite-clothes-img-list02.jpg", "_common/img/favorite/favorite-clothes-img-list03.jpg"],
 	},
 	{
 		label: "動物",
@@ -176,8 +176,8 @@ const favoriteData = [
 		アニマルセラピーという言葉があるように、動物をみたり触れたりするだけですごくストレス値が下がるように感じます。<br /><br />
 		もしひとりで行く勇気が...みたいな人がいたら喜んでついていくので声かけてくださいね〜！
 		`,
-		mainImg: "/_common/img/favorite/favorite-animal-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-animal-img-list01.jpg", "/_common/img/favorite/favorite-animal-img-list02.jpg", "/_common/img/favorite/favorite-animal-img-list03.jpg", "/_common/img/favorite/favorite-animal-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-animal-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-animal-img-list01.jpg", "_common/img/favorite/favorite-animal-img-list02.jpg", "_common/img/favorite/favorite-animal-img-list03.jpg", "_common/img/favorite/favorite-animal-img-list04.jpg"],
 	},
 	{
 		label: "カフェ",
@@ -193,8 +193,8 @@ const favoriteData = [
 		単調な味ではなく、咀嚼するごとに風味が変わる感じです。（伝われ）<br /><br />
 		とりあえずとっても大満足だったので、興味ある方はぜひ行ってみてくださいー！
 		`,
-		mainImg: "/_common/img/favorite/favorite-cafe-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-cafe-img-list01.jpg", "/_common/img/favorite/favorite-cafe-img-list02.jpg", "/_common/img/favorite/favorite-cafe-img-list03.jpg", "/_common/img/favorite/favorite-cafe-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-cafe-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-cafe-img-list01.jpg", "_common/img/favorite/favorite-cafe-img-list02.jpg", "_common/img/favorite/favorite-cafe-img-list03.jpg", "_common/img/favorite/favorite-cafe-img-list04.jpg"],
 	},
 	{
 		label: "お菓子",
@@ -209,7 +209,7 @@ const favoriteData = [
 		映画とかみながら食べてたら本当に一瞬でなくなってしまいます…<br /><br />
 		日本のポテチも種類たくさんありますが、やっぱり海外のポテチはなんとも言えない体に悪い感じが染みるなぁ〜と思っていつも食べています。
 		`,
-		mainImg: "/_common/img/favorite/favorite-snack-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-snack-img01.jpg",
 		imgList: [],
 	},
 	{
@@ -227,8 +227,8 @@ const favoriteData = [
 		牛沢の他には同じくTOP4のキヨやレトルト、ガッチマンを見たり、Vtuberさんの配信もごくたまに見ます。Vはゲーム実況よりかは企画ものをよく見るかもしれません！<br /><br />
 		小説など、文字を読むのが苦手なので、実況として上手に呼んでくれるのが助かります...
 		`,
-		mainImg: "/_common/img/favorite/favorite-top4-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-top4-img-list01.jpg", "/_common/img/favorite/favorite-top4-img-list02.jpg", "/_common/img/favorite/favorite-top4-img-list03.jpg", "/_common/img/favorite/favorite-top4-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-top4-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-top4-img-list01.jpg", "_common/img/favorite/favorite-top4-img-list02.jpg", "_common/img/favorite/favorite-top4-img-list03.jpg", "_common/img/favorite/favorite-top4-img-list04.jpg"],
 	},
 	{
 		label: "映画",
@@ -249,7 +249,7 @@ const favoriteData = [
 		です！アマプラとかNetflixとかで観れるので、ぜひ観てみてください！<br />
 		おすすめの映画あれば教えてください！
 		`,
-		mainImg: "/_common/img/favorite/favorite-movie-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-movie-img01.jpg",
 		imgList: [],
 	},
 	{
@@ -261,8 +261,8 @@ const favoriteData = [
 		写真趣味にしたいな〜と思いつつ買ったのですが、今のIphoneの性能とかポートレートモードが優秀なので、持ち運ぶ手間や、編集の手間などを考えてしまうと億劫になってしまいます...<br /><br />
 		誰か一緒に紅葉とか、桜とか撮りにいきませんか...。
 		`,
-		mainImg: "/_common/img/favorite/favorite-camera-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-camera-img-list01.jpg", "/_common/img/favorite/favorite-camera-img-list02.jpg"],
+		mainImg: "_common/img/favorite/favorite-camera-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-camera-img-list01.jpg", "_common/img/favorite/favorite-camera-img-list02.jpg"],
 	},
 	{
 		label: "季節",
@@ -275,8 +275,8 @@ const favoriteData = [
 		特に、淡い小さな花が多いので、すごく繊細で淡いふんわりした世界に囲まれているような気分になります。<br /><br />
 		春のお昼時にお昼寝するのがすごく好きです！
 		`,
-		mainImg: "/_common/img/favorite/favorite-season-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-season-img-list01.jpg", "/_common/img/favorite/favorite-season-img-list02.jpg", "/_common/img/favorite/favorite-season-img-list03.jpg", "/_common/img/favorite/favorite-season-img-list04.jpg"],
+		mainImg: "_common/img/favorite/favorite-season-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-season-img-list01.jpg", "_common/img/favorite/favorite-season-img-list02.jpg", "_common/img/favorite/favorite-season-img-list03.jpg", "_common/img/favorite/favorite-season-img-list04.jpg"],
 	},
 	{
 		label: "香り",
@@ -294,7 +294,7 @@ const favoriteData = [
 		こちらは結構甘い系なのですが、お安めの香水なのでバシャバシャ使えるじゃんと思って普段使いとしてつけています。<br /><br />
 		皆さんはどんな香りが好きですか？
 		`,
-		mainImg: "/_common/img/favorite/favorite-perfume-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-perfume-img01.jpg",
 		imgList: [],
 	},
 	{
@@ -306,8 +306,8 @@ const favoriteData = [
 		例えば自分の誕生日とか、仕事頑張ったご褒美とか...そんな時にシチューとかグラタンとか、ホワイトソース系の食べ物を食べたいな〜と思います！<br /><br />
 		濃厚なのであまり量は食べられないのですが、チーズたっぷりのグラタンや、お野菜たっぷりのクリームシチュー、ジャンキーでたまらないマカロニ&チーズなど、疲れた時こそ、ベシャメルソース系の食べ物が食べたくなります！
 		`,
-		mainImg: "/_common/img/favorite/favorite-food-img01.jpg",
-		imgList: ["/_common/img/favorite/favorite-food-img-list01.jpg", "/_common/img/favorite/favorite-food-img-list02.jpg"],
+		mainImg: "_common/img/favorite/favorite-food-img01.jpg",
+		imgList: ["_common/img/favorite/favorite-food-img-list01.jpg", "_common/img/favorite/favorite-food-img-list02.jpg"],
 	},
 	{
 		label: "飲み物",
@@ -321,7 +321,7 @@ const favoriteData = [
 		夏にジャスミンティーを飲むと体温が下がる気が本当にするので、ごくごく飲んでいます。<br /><br />
 		健康に良さそうなドリンクも好きで、スムージーや豆乳、プロテインなどもよく飲みます。
 		`,
-		mainImg: "/_common/img/favorite/favorite-drink-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-drink-img01.jpg",
 		imgList: [],
 	},
 	{
@@ -338,12 +338,12 @@ const favoriteData = [
 		また、おすすめの曲とかあったら教えてください！<br />
 		（最近、クリープハイプとVaundyの曲聴いてます！）
 		`,
-		mainImg: "/_common/img/favorite/favorite-artist-img01.jpg",
+		mainImg: "_common/img/favorite/favorite-artist-img01.jpg",
 		imgList: [],
 	},
 ];
 
-const NO_IMAGE = "/_common/img/no_image.svg";
+const NO_IMAGE = "_common/img/no_image.svg";
 (function () {
 	const btnContainer = document.getElementById("favoriteBtnContainer");
 	const pcContainer = document.getElementById("favoriteContents"); // PC側
