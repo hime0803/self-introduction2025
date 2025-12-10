@@ -1,4 +1,4 @@
-name: Deploy to Staging (test.himmme.com)
+name: テストアップ(test.himmme.com)
 
 on:
   push:
