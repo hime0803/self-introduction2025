@@ -1,4 +1,4 @@
-name: テストアップ(test.himmme.com)
+name: テストアップ (test.himmme.com)
 
 on:
   push:
@@ -16,17 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 必要に応じてビルド
-      - name: Install & Build
-        run: |
-          npm install
-          npm run build
-
       - name: Upload to Xserver (Staging)
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SFTP_HOST_STG }}
           username: ${{ secrets.SFTP_USER_STG }}
           password: ${{ secrets.SFTP_PASS_STG }}
-          source: "dist/*"
+          source: "./*"          # ← dist ではなく、そのまま
           target: ${{ secrets.SFTP_PATH_STG }}
+          rm: true               # 既存ファイル削除（任意）
