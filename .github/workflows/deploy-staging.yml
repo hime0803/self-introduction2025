@@ -2,26 +2,40 @@ name: テストアップ (test.himmme.com)
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+
+permissions:
+  contents: read
 
 jobs:
   deploy-staging:
     runs-on: ubuntu-latest
-
     environment:
       name: staging
       url: https://test.himmme.com
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Upload to Xserver (Staging)
+      - name: Prepare SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          # known_hosts があるならセット
+          if [ -n "${{ secrets.SSH_KNOWN_HOSTS }}" ]; then
+            echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          fi
+
+      - name: Upload to Staging via SCP (key auth)
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SFTP_HOST_STG }}
           username: ${{ secrets.SFTP_USER_STG }}
-          password: ${{ secrets.SFTP_PASS_STG }}
-          source: "./*"          # ← dist ではなく、そのまま
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          source: "./*"
           target: ${{ secrets.SFTP_PATH_STG }}
-          rm: true               # 既存ファイル削除（任意）
+          rm: true
+
