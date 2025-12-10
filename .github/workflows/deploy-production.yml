@@ -32,7 +32,7 @@ jobs:
           host: ${{ secrets.SFTP_HOST_PROD }}
           username: ${{ secrets.SFTP_USER_PROD }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
+          port: 10022
           source: "./*"
           target: ${{ secrets.SFTP_PATH_PROD }}
           rm: true
