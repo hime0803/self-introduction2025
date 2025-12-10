@@ -37,9 +37,9 @@ jobs:
       - name: Create .htaccess for staging
         run: |
           echo 'AuthUserFile /home/himme/himmme.com/public_html/test/.htpasswd' > ./.htaccess
-          echo 'AuthName "Test Area"' >> dist/.htaccess
-          echo 'AuthType Basic' >> dist/.htaccess
-          echo 'Require valid-user' >> dist/.htaccess
+          echo 'AuthName "Test Area"' >> ./.htaccess
+          echo 'AuthType Basic' >> ./.htaccess
+          echo 'Require valid-user' >> ./.htaccess
 
       # SCPでアップロード
       - name: Upload to Staging via SCP (key auth)
