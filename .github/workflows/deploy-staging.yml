@@ -31,12 +31,12 @@ jobs:
       - name: Create .htpasswd
         run: |
           mkdir -p dist
-          htpasswd -nb "${{ secrets.BASIC_AUTH_USER }}" "${{ secrets.BASIC_AUTH_PASS }}" > dist/.htpasswd
+          htpasswd -nb "${{ secrets.BASIC_AUTH_USER }}" "${{ secrets.BASIC_AUTH_PASS }}" > ./.htpasswd
 
       # .htaccess の生成
       - name: Create .htaccess for staging
         run: |
-          echo 'AuthUserFile /home/himme/himmme.com/public_html/test/.htpasswd' > dist/.htaccess
+          echo 'AuthUserFile /home/himme/himmme.com/public_html/test/.htpasswd' > ./.htaccess
           echo 'AuthName "Test Area"' >> dist/.htaccess
           echo 'AuthType Basic' >> dist/.htaccess
           echo 'Require valid-user' >> dist/.htaccess
