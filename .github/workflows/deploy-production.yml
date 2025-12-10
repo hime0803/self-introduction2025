@@ -1,0 +1,30 @@
+name: 本番環境へデプロイ (himmme.com)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: production
+      url: https://himmme.com
+      # ← GitHub Environment（production）で「承認者」を設定しておくと安全！
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install & Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Upload to Xserver (Production)
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SFTP_HOST_PROD }}
+          username: ${{ secrets.SFTP_USER_PROD }}
+          password: ${{ secrets.SFTP_PASS_PROD }}
+          source: "dist/*"
+          target: ${{ secrets.SFTP_PATH_PROD }}
