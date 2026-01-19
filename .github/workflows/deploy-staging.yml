@@ -1,0 +1,54 @@
+name: テストアップ (test.himmme.com)
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-staging:
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://test.himmme.com
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          if [ -n "${{ secrets.SSH_KNOWN_HOSTS }}" ]; then
+            echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          fi
+
+      # .htpasswd の生成
+      - name: Create .htpasswd
+        run: |
+          mkdir -p dist
+          htpasswd -nb "${{ secrets.BASIC_AUTH_USER }}" "${{ secrets.BASIC_AUTH_PASS }}" > ./.htpasswd
+
+      # .htaccess の生成
+      - name: Create .htaccess for staging
+        run: |
+          echo 'AuthUserFile /home/himme/himmme.com/public_html/test/.htpasswd' > ./.htaccess
+          echo 'AuthName "Test Area"' >> ./.htaccess
+          echo 'AuthType Basic' >> ./.htaccess
+          echo 'Require valid-user' >> ./.htaccess
+
+      # SCPでアップロード
+      - name: Upload to Staging via SCP (key auth)
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SFTP_HOST_STG }}
+          username: ${{ secrets.SFTP_USER_STG }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 10022
+          source: "./*"
+          target: ${{ secrets.SFTP_PATH_STG }}
+          rm: true
